@@ -1,10 +1,28 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-    <a href="adf_tron://close">close</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheme Event Test</title>
+    <script type="text/javascript">
+        // Scheme을 통해 네이티브 앱과 상호작용
+        const handleScheme = () => {
+            // 'myapp_Unity://calltest' 스킴을 호출하여 네이티브 앱의 함수를 호출
+            window.location.replace('myapp_Unity://calltest');
+        }
+
+        // 네이티브 앱에서 JS로 메시지를 보낼 때 호출되는 콜백 함수
+        function callbackJS(msg) {
+            // 로그 박스에 메시지 출력
+            document.getElementById('logBox').value += "\n" + msg;
+        }
+    </script>
+</head>
+<body>
+    <h1>Scheme Event Example</h1>
+    <button onclick="handleScheme()">Scheme Event</button> <!-- 버튼 클릭으로 handleScheme 호출 -->
+
+    <!-- 로그가 출력될 텍스트 박스 -->
+    <textarea id="logBox" rows="10" cols="50" readonly></textarea>
+</body>
 </html>
