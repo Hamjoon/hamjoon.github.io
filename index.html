@@ -8,7 +8,7 @@
         // Scheme을 통해 네이티브 앱과 상호작용
         const handleScheme = () => {
             // 'adf_tron://close' 스킴을 호출하여 네이티브 앱의 함수를 호출
-            window.location.replace('adf://calltest');
+            window.location.replace('adftron://calltest');
         }
 
         // 네이티브 앱에서 JS로 메시지를 보낼 때 호출되는 콜백 함수
@@ -25,6 +25,6 @@
     <!-- 로그가 출력될 텍스트 박스 -->
     <textarea id="logBox" rows="10" cols="50" readonly></textarea>
 
-    <a href="adf://close">Test Link</a>
+    <a href="adftron://close">Test Link</a>
 </body>
 </html>
