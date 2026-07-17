@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Garibong Labs · Independent Software Studio</title>
+
+    <meta
+      name="description"
+      content="Garibong Labs is an independent software studio building focused, thoughtful digital products."
+    />
+
+    <link rel="canonical" href="https://garibong.dev" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Garibong Labs" />
+    <meta
+      property="og:description"
+      content="An independent software studio building focused, thoughtful digital products."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://garibong.dev" />
+  </head>
+
+  <body>
+    <main>
+      <!-- About -->
+      <section id="about">
+        <h1>Garibong Labs</h1>
+
+        <p>
+          Garibong Labs is an independent software studio focused on building
+          small, thoughtful digital products.
+        </p>
+
+        <p>
+          We design and develop software that values clarity, calm user
+          experiences, and long-term usefulness.
+        </p>
+      </section>
+
+      <!-- What we build -->
+      <section id="what-we-build">
+        <h2>What we build</h2>
+
+        <p>
+          We build focused software products designed to be calm, useful, and
+          easy to live with over time.
+        </p>
+      </section>
+
+      <!-- Products -->
+      <section id="products">
+        <h2>Products</h2>
+
+        <div class="product">
+          <h3>Garibong Clip</h3>
+          <p>A calm podcast player focused on listening.</p>
+          <p>
+            <a
+              href="https://apps.apple.com/app/id6756973527"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on the App Store →
+            </a>
+          </p>
+        </div>
+
+        <div class="product">
+          <h3>Garibong Radio</h3>
+          <p>A simple radio app for quiet listening.</p>
+          <p>
+            <a
+              href="https://apps.apple.com/kr/app/id6757255846"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on the App Store →
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p><strong>Garibong Labs</strong></p>
+
+      <p>
+        Business Registration Number: 604-05-36402
+      </p>
+
+      <p>
+        Contact:
+        <a href="mailto:contact@garibong.dev">
+          contact@garibong.dev
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://glaze-adasaurus-f8d.notion.site/Privacy-Policy-2d688ca270ad80ed8183c5e4d308847b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy
+        </a>
+      </p>
+
+      <p>
+        © 2026 Garibong Labs. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
