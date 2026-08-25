@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#07130f" />
+    <link rel="icon" href="/cube-serpent/favicon.svg" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="Steer a luminous serpent across every face of a living cube, collect seeds, grow, and survive your own trail."
+    />
+    <title>Cube Serpent</title>
+    <script type="module" crossorigin src="/cube-serpent/assets/index-BvN9YoFi.js"></script>
+    <link rel="stylesheet" crossorigin href="/cube-serpent/assets/index-DMsrRxr2.css">
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Cube Serpent six-face game board"></canvas>
+      <header id="brand-bar">
+        <span class="brand-mark" aria-hidden="true">◇</span>
+        <span>CUBE SERPENT</span>
+      </header>
+      <section id="hud" aria-label="Score and game controls" hidden>
+        <div class="hud-row">
+          <div class="hud-metric score-metric">
+            <span>Score</span>
+            <strong id="score-value">000000</strong>
+          </div>
+          <div class="hud-metric">
+            <span>Best</span>
+            <strong id="high-score-value">000000</strong>
+          </div>
+          <div id="status-line"><span class="status-dot"></span><span id="status-copy">Find the seed</span></div>
+          <button id="mute-button" class="icon-button" type="button" aria-label="Mute sound" aria-pressed="false">♪</button>
+          <button id="motion-button" class="icon-button" type="button" aria-label="Reduce motion" aria-pressed="false">◌</button>
+          <button id="pause-button" class="icon-button" type="button" aria-label="Pause game">Ⅱ</button>
+        </div>
+        <div id="combo-meter" hidden>
+          <strong id="combo-value">×1</strong>
+          <div class="combo-copy"><span>CHAIN</span><span id="combo-state">Keep it alive</span></div>
+          <div id="combo-segments" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="title-panel" class="overlay-panel" aria-labelledby="game-title">
+        <div class="eyebrow">A SIX-SIDED GARDEN</div>
+        <h1 id="game-title">CUBE <em>SERPENT</em></h1>
+        <p>Guide a luminous serpent over a living cube. Follow the seeds, cross its edges, and never meet your own trail.</p>
+        <button id="start-button" class="primary-button" type="button"><span>BEGIN THE RUN</span><span aria-hidden="true">→</span></button>
+        <div class="controls-copy">
+          <span><kbd>WASD</kbd> or <kbd>ARROWS</kbd> to steer</span>
+          <span>Swipe directly on the cube</span>
+          <span><kbd>P</kbd> to pause</span>
+        </div>
+      </section>
+
+      <section id="pause-panel" class="overlay-panel compact-panel" aria-labelledby="pause-title" hidden>
+        <div class="eyebrow">THE GARDEN WAITS</div>
+        <h2 id="pause-title">Paused</h2>
+        <button id="resume-button" class="primary-button" type="button"><span>RESUME</span><span aria-hidden="true">→</span></button>
+        <button id="restart-pause-button" class="secondary-button" type="button">Restart run</button>
+        <div class="preference-row">
+          <button id="pause-mute-button" class="secondary-button" type="button" aria-pressed="false">Sound on</button>
+          <button id="pause-motion-button" class="secondary-button" type="button" aria-pressed="false">Full motion</button>
+        </div>
+      </section>
+
+      <section id="game-over-panel" class="overlay-panel compact-panel" aria-labelledby="game-over-title" hidden>
+        <div id="result-eyebrow" class="eyebrow">TRAIL CROSSED</div>
+        <h2 id="game-over-title">The garden wins.</h2>
+        <p id="collision-copy">You met your own trail.</p>
+        <div class="final-score"><span>Final score</span><strong id="final-score">0000</strong><b id="new-best" hidden>NEW BEST</b></div>
+        <button id="retry-button" class="primary-button" type="button"><span>RUN IT BACK</span><span aria-hidden="true">↻</span></button>
+        <button id="copy-result-button" class="secondary-button" type="button">Copy result</button>
+        <div id="copy-notice" role="status" hidden></div>
+        <span class="shortcut-copy">Press <kbd>Space</kbd>, <kbd>Enter</kbd>, or tap to retry</span>
+      </section>
+
+      <div id="game-callout" aria-hidden="true"><span id="callout-label">EDGE ROUTE</span><strong id="callout-copy">RIGHT FACE</strong></div>
+      <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    </main>
+  </body>
+</html>
