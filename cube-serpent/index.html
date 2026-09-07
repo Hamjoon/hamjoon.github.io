@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#07130f" />
+    <meta name="theme-color" content="#030812" />
     <link rel="icon" href="/cube-serpent/favicon.svg" type="image/svg+xml" />
     <meta
       name="description"
       content="Steer a luminous serpent across every face of a living cube, collect seeds, grow, and survive your own trail."
     />
     <title>Cube Serpent</title>
-    <script type="module" crossorigin src="/cube-serpent/assets/index-BPTRpjiS.js"></script>
-    <link rel="stylesheet" crossorigin href="/cube-serpent/assets/index-DMsrRxr2.css">
+    <script type="module" crossorigin src="/cube-serpent/assets/index-BgMY5Oo7.js"></script>
+    <link rel="stylesheet" crossorigin href="/cube-serpent/assets/index-D_RxlvSW.css">
   </head>
   <body>
     <main id="app">
@@ -31,9 +31,9 @@
             <strong id="high-score-value">000000</strong>
           </div>
           <div id="status-line"><span class="status-dot"></span><span id="status-copy">Find the seed</span></div>
-          <button id="mute-button" class="icon-button" type="button" aria-label="Mute sound" aria-pressed="false">♪</button>
-          <button id="motion-button" class="icon-button" type="button" aria-label="Reduce motion" aria-pressed="false">◌</button>
-          <button id="pause-button" class="icon-button" type="button" aria-label="Pause game">Ⅱ</button>
+          <button id="mute-button" class="icon-button" type="button" aria-label="Mute sound" aria-pressed="false" title="Sound"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4Z"/><path class="sound-waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="mute-slash" d="m16 9 5 6m0-6-5 6"/></svg></button>
+          <button id="motion-button" class="icon-button" type="button" aria-label="Reduce motion" aria-pressed="false" title="Motion preference"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-8-8"/><path d="M12 8a4 4 0 1 0 4 4M16 4h4v4"/></svg></button>
+          <button id="pause-button" class="icon-button" type="button" aria-label="Pause game" title="Pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke-width="3"/></svg></button>
         </div>
         <div id="combo-meter" hidden>
           <strong id="combo-value">×1</strong>
@@ -45,19 +45,25 @@
       </section>
 
       <section id="title-panel" class="overlay-panel" aria-labelledby="game-title">
-        <div class="eyebrow">A SIX-SIDED GARDEN</div>
+        <svg class="menu-sigil" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+          <circle class="orbit" cx="32" cy="32" r="29" stroke-dasharray="38 7 2 7"/>
+          <path d="m32 12 18 10v21L32 53 14 43V22Zm0 20 18-10M32 32 14 22m18 10v21M23 17l18 10v10l-9 5-9-5V27l9-5"/>
+          <circle cx="32" cy="32" r="3" fill="currentColor" stroke="none"/>
+        </svg>
+        <div class="eyebrow">The arcane sanctuary</div>
         <h1 id="game-title">CUBE <em>SERPENT</em></h1>
-        <p>Guide a luminous serpent over a living cube. Follow the seeds, cross its edges, and never meet your own trail.</p>
-        <button id="start-button" class="primary-button" type="button"><span>BEGIN THE RUN</span><span aria-hidden="true">→</span></button>
+        <p>Follow the golden seeds. Cross the cube’s edges. Keep your luminous trail unbroken.</p>
+        <button id="start-button" class="primary-button" type="button"><span>ENTER THE SANCTUARY</span><span aria-hidden="true">→</span></button>
         <div class="controls-copy">
           <span><kbd>WASD</kbd> or <kbd>ARROWS</kbd> to steer</span>
-          <span>Swipe directly on the cube</span>
+          <span>On touch screens, swipe to steer</span>
           <span><kbd>P</kbd> to pause</span>
         </div>
+        <div class="menu-footer"><span>Six faces</span><i></i><span>One unbroken trail</span></div>
       </section>
 
       <section id="pause-panel" class="overlay-panel compact-panel" aria-labelledby="pause-title" hidden>
-        <div class="eyebrow">THE GARDEN WAITS</div>
+        <div class="eyebrow">TAKE A BREATH</div>
         <h2 id="pause-title">Paused</h2>
         <button id="resume-button" class="primary-button" type="button"><span>RESUME</span><span aria-hidden="true">→</span></button>
         <button id="restart-pause-button" class="secondary-button" type="button">Restart run</button>
