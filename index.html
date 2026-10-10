@@ -1,118 +1,590 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="theme-color" content="#f4f1e8" />
     <title>Garibong Labs · Independent Software Studio</title>
-
     <meta
       name="description"
-      content="Garibong Labs is an independent software studio building focused, thoughtful digital products."
+      content="Garibong Labs is an independent software studio in Seoul, building thoughtful iOS apps, playful games, and Toss mini apps."
     />
-
-    <link rel="canonical" href="https://garibong.dev" />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Garibong Labs" />
+    <link rel="canonical" href="https://garibong.dev/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <meta
+      property="og:title"
+      content="Garibong Labs · Small software. Built to matter."
+    />
     <meta
       property="og:description"
-      content="An independent software studio building focused, thoughtful digital products."
+      content="Thoughtful iOS apps, playful games, and Toss mini apps from an independent studio in Seoul."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://garibong.dev" />
+    <meta property="og:url" content="https://garibong.dev/" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-
   <body>
-    <main>
-      <!-- About -->
-      <section id="about">
-        <h1>Garibong Labs</h1>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="#top" aria-label="Garibong Labs, home"
+          >Garibong Labs</a
+        >
+        <nav aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#ios-apps">iOS Apps</a></li>
+            <li><a href="#toss-apps">Toss Mini Apps</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+        <a class="nav-cta" href="#ios-apps"
+          >Explore work <span aria-hidden="true">↓</span></a
+        >
+      </div>
+    </header>
 
-        <p>
-          Garibong Labs is an independent software studio focused on building
-          small, thoughtful digital products.
-        </p>
-
-        <p>
-          We design and develop software that values clarity, calm user
-          experiences, and long-term usefulness.
-        </p>
-      </section>
-
-      <!-- What we build -->
-      <section id="what-we-build">
-        <h2>What we build</h2>
-
-        <p>
-          We build focused software products designed to be calm, useful, and
-          easy to live with over time.
-        </p>
-      </section>
-
-      <!-- Products -->
-      <section id="products">
-        <h2>Products</h2>
-
-        <div class="product">
-          <h3>Garibong Clip</h3>
-          <p>A calm podcast player focused on listening.</p>
-          <p>
-            <a
-              href="https://apps.apple.com/app/id6756973527"
-              target="_blank"
-              rel="noopener noreferrer"
+    <main id="main-content">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent software studio · Seoul</p>
+          <h1 id="hero-title">Small software.<br />Built to matter.</h1>
+          <p class="hero-lede">
+            We design focused apps and playful experiences that turn everyday
+            moments into something useful, calm, and memorable.
+          </p>
+          <div class="button-row">
+            <a class="button button--dark" href="#ios-apps"
+              >Explore our work <span aria-hidden="true">↓</span></a
             >
-              View on the App Store →
-            </a>
+            <a class="button button--outline" href="#journal"
+              >Read the journal <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div
+          class="hero-art"
+          aria-label="Book Lawn and Bloom Velocity app previews"
+        >
+          <div class="glow glow--one" aria-hidden="true"></div>
+          <div class="glow glow--two" aria-hidden="true"></div>
+          <figure class="device device--portrait">
+            <img
+              src="/assets/ios/book-lawn-screen.jpg"
+              alt="Book Lawn reading tracker screen"
+              width="444"
+              height="960"
+            />
+          </figure>
+          <figure class="device device--landscape">
+            <img
+              src="/assets/ios/bloom-screen.jpg"
+              alt="Bloom Velocity anti-gravity racing game screen"
+              width="960"
+              height="444"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section shell" id="ios-apps" aria-labelledby="ios-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 · iOS Apps</p>
+            <h2 id="ios-title">Made for the App Store.</h2>
+          </div>
+          <p>
+            Thoughtful utilities and original games, designed and built
+            independently from first sketch to release.
           </p>
         </div>
-
-        <div class="product">
-          <h3>Garibong Radio</h3>
-          <p>A simple radio app for quiet listening.</p>
-          <p>
+        <div class="ios-grid">
+          <article class="product-card product-card--featured">
+            <div>
+              <img
+                class="app-icon"
+                src="/assets/ios/book-lawn.jpg"
+                alt=""
+                width="512"
+                height="512"
+                loading="lazy"
+                decoding="async"
+              />
+              <p class="card-kicker">Featured · Reading</p>
+              <h3>Book Lawn</h3>
+              <p>
+                A quiet reading tracker that turns every reading session into a
+                lawn you can grow over time.
+              </p>
+            </div>
             <a
+              class="card-link card-link--light"
+              href="https://apps.apple.com/app/book-lawn-reading-tracker/id6757746167"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View on the App Store — Book Lawn"
+              >View on the App Store <span aria-hidden="true">↗</span></a
+            >
+          </article>
+
+          <article class="product-card">
+            <div>
+              <img
+                class="app-icon"
+                src="/assets/ios/asian-games.jpg"
+                alt=""
+                width="512"
+                height="512"
+                loading="lazy"
+                decoding="async"
+              />
+              <p class="card-kicker">Sports</p>
+              <h3>2026 Asian Games</h3>
+              <p>
+                Team Korea schedules, medal events, and calendar reminders
+                without the noise.
+              </p>
+            </div>
+            <a
+              class="card-link"
+              href="https://apps.apple.com/app/2026-%EC%95%84%EC%8B%9C%EC%95%88%EA%B2%8C%EC%9E%84-%ED%95%9C%EA%B5%AD%ED%8C%80-%EC%9D%BC%EC%A0%95/id6811900002"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View 2026 Asian Games on the App Store"
+              >App Store <span aria-hidden="true">↗</span></a
+            >
+          </article>
+
+          <article class="product-card">
+            <div>
+              <img
+                class="app-icon"
+                src="/assets/ios/garibong-radio.jpg"
+                alt=""
+                width="512"
+                height="512"
+                loading="lazy"
+                decoding="async"
+              />
+              <p class="card-kicker">Music</p>
+              <h3>Garibong Radio</h3>
+              <p>
+                Set a 24-hour radio schedule for focus, rest, jazz, classics,
+                and sleep.
+              </p>
+            </div>
+            <a
+              class="card-link"
               href="https://apps.apple.com/kr/app/id6757255846"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="View Garibong Radio on the App Store"
+              >App Store <span aria-hidden="true">↗</span></a
             >
-              View on the App Store →
-            </a>
+          </article>
+
+          <article class="product-card">
+            <div>
+              <img
+                class="app-icon"
+                src="/assets/ios/bloom-velocity.jpg"
+                alt=""
+                width="512"
+                height="512"
+                loading="lazy"
+                decoding="async"
+              />
+              <p class="card-kicker">Game · Racing</p>
+              <h3>Bloom Velocity</h3>
+              <p>
+                Fast anti-gravity combat racing above the bioluminescent oceans
+                of an alien world.
+              </p>
+            </div>
+            <a
+              class="card-link"
+              href="https://apps.apple.com/app/bloom-velocity/id6809160127"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Bloom Velocity on the App Store"
+              >App Store <span aria-hidden="true">↗</span></a
+            >
+          </article>
+
+          <article class="product-card product-card--coming">
+            <div>
+              <div class="app-icon app-icon--placeholder" aria-hidden="true">
+                <span>TT</span>
+              </div>
+              <p class="card-kicker">Game · Sports</p>
+              <h3>Lunch Table Tennis King</h3>
+              <p>
+                Fast rallies, sharp timing, and one more match before the break
+                is over.
+              </p>
+            </div>
+            <span class="status-pill">Coming soon</span>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section section--blue"
+        id="toss-apps"
+        aria-labelledby="toss-title"
+      >
+        <div class="shell">
+          <div class="section-heading section-heading--light">
+            <div>
+              <p class="eyebrow eyebrow--light">02 · Toss Mini Apps</p>
+              <h2 id="toss-title">Instant ideas, ready to play.</h2>
+            </div>
+            <p>
+              Open Toss and search by name to find twelve live mini apps made
+              for everyday curiosity, quick decisions, and a little fun.
+            </p>
+          </div>
+          <ul class="mini-grid" aria-label="Live Toss mini apps">
+            <li class="mini-card">
+              <img
+                src="/assets/toss/reading-lawn.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Reading Lawn</h3>
+                <p>Grow a lawn through reading.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://reading-lawn"
+                aria-label="Open in Toss — Reading Lawn"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/movie-of-the-week.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Movie of the Week</h3>
+                <p>See what is new in theaters.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://movie-oftheweek"
+                aria-label="Open in Toss — Movie of the Week"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/next-day-off.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Next Day Off</h3>
+                <p>Count down to the next break.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://offday-calendar"
+                aria-label="Open in Toss — Next Day Off"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/vacation-safety.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Vacation Safety</h3>
+                <p>Spot accident-prone roads.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://vacation-safety-map"
+                aria-label="Open in Toss — Vacation Safety"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/bloom-velocity.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Bloom Velocity</h3>
+                <p>Race above an alien ocean.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://ghost-leg-3d"
+                aria-label="Open in Toss — Bloom Velocity"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/scary-ghost-leg.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Scary Ghost Leg</h3>
+                <p>Pick a winner in 3D.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://scary-ghost-leg"
+                aria-label="Open in Toss — Scary Ghost Leg"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/roulette-wheel.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Roulette Wheel</h3>
+                <p>Let the wheel make the call.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://roulette-wheel"
+                aria-label="Open in Toss — Roulette Wheel"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/seoul-time-travel.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Seoul Time Travel</h3>
+                <p>Watch Gwanghwamun change.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://seoul-time-travel"
+                aria-label="Open in Toss — Seoul Time Travel"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/hangang-stroll.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Hangang Stroll</h3>
+                <p>Take a playful 3D walk.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://find-hidden-objects"
+                aria-label="Open in Toss — Hangang Stroll"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/hope-poll.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Hope Poll</h3>
+                <p>Vote on the film's meaning.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://movie-hope"
+                aria-label="Open in Toss — Hope Poll"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/noodles-gauge.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Noodles Gauge</h3>
+                <p>Charge up with cold noodles.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://cold-noodles-gauge"
+                aria-label="Open in Toss — Noodles Gauge"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li class="mini-card">
+              <img
+                src="/assets/toss/team-korea-2026.png"
+                alt=""
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Team Korea 2026</h3>
+                <p>Follow every Korean match.</p>
+              </div>
+              <a
+                class="mini-link"
+                href="intoss://asian-games-2026"
+                aria-label="Open in Toss — Team Korea 2026"
+                >Open in Toss <span aria-hidden="true">↗</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="section shell"
+        id="journal"
+        aria-labelledby="journal-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 · Journal</p>
+            <h2 id="journal-title">Notes from the build.</h2>
+          </div>
+          <p>
+            Architecture, experiments, and practical lessons from making
+            independent software.
           </p>
+        </div>
+        <article class="journal-card">
+          <div class="journal-art" aria-hidden="true">
+            <div class="signal signal--a"></div>
+            <div class="signal signal--b"></div>
+            <div class="signal signal--c"></div>
+            <span>◉</span><span class="journal-arrow">↗</span>
+          </div>
+          <div class="journal-copy">
+            <p class="card-kicker card-kicker--light">
+              Featured article · Architecture
+            </p>
+            <h3>
+              Calling My AI Agent: Building a Voice Bridge with OpenClaw and
+              Agora
+            </h3>
+            <p>
+              A field note on the architecture and decisions behind connecting
+              an AI agent to a real-time voice experience.
+            </p>
+            <a
+              class="button button--light"
+              href="https://bongman.tistory.com/1906"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read the article <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="section about shell"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div>
+          <p class="eyebrow">04 · About</p>
+          <h2 id="about-title">Independent by design.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Garibong Labs is a Seoul-based independent software studio. We make
+            small, focused products with equal care for usefulness, character,
+            and long-term quality.
+          </p>
+          <div class="button-row">
+            <a class="button button--dark" href="mailto:contact@garibong.dev"
+              >Contact us <span aria-hidden="true">↗</span></a
+            >
+            <a
+              class="button button--outline"
+              href="https://github.com/Hamjoon"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <p><strong>Garibong Labs</strong></p>
-
-      <p>
-        Business Registration Number: 604-05-36402
-      </p>
-
-      <p>
-        Contact:
-        <a href="mailto:contact@garibong.dev">
-          contact@garibong.dev
-        </a>
-      </p>
-
-      <p>
-        <a
-          href="https://glaze-adasaurus-f8d.notion.site/Privacy-Policy-2d688ca270ad80ed8183c5e4d308847b"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Privacy Policy
-        </a>
-      </p>
-
-      <p>
-        © 2026 Garibong Labs. All rights reserved.
-      </p>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <p class="wordmark wordmark--footer">Garibong Labs</p>
+          <p>Independent software studio · Seoul, Korea</p>
+        </div>
+        <div class="footer-meta">
+          <p>
+            <a href="mailto:contact@garibong.dev">contact@garibong.dev</a> ·
+            <a
+              href="https://glaze-adasaurus-f8d.notion.site/Privacy-Policy-2d688ca270ad80ed8183c5e4d308847b"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Privacy Policy</a
+            >
+          </p>
+          <p>Business Registration Number: 604-05-36402</p>
+          <p>© 2026 Garibong Labs. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
