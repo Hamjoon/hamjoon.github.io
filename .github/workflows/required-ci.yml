@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - main
+  merge_group:
 
 permissions:
   contents: read
@@ -23,7 +24,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run validator tests
-        run: python -m unittest discover -s tests -v
+        run: python -m unittest discover -s .github/ci/tests -v
 
       - name: Validate site
-        run: python scripts/validate_site.py .
+        run: python .github/ci/validate_site.py .

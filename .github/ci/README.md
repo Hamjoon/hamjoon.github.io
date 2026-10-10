@@ -1,15 +1,15 @@
 # Required CI
 
-The `Required CI` workflow runs for pull requests targeting `main`. Its single,
-stable check name is **`Site integrity`**. It uses only the Python standard
-library and local repository files; it does not make network requests or alter
-the GitHub Pages deployment workflow.
+The `Required CI` workflow runs for pull requests targeting `main` and future
+merge-queue entries. Its single, stable check name is **`Site integrity`**. It
+uses only the Python standard library and local repository files; it does not
+make network requests or alter the GitHub Pages deployment workflow.
 
 Run the same checks locally:
 
 ```sh
-python3 -m unittest discover -s tests -v
-python3 scripts/validate_site.py .
+python3 -m unittest discover -s .github/ci/tests -v
+python3 .github/ci/validate_site.py .
 git diff --check
 ```
 
@@ -17,7 +17,12 @@ The validator checks production HTML files and CSS for missing local targets,
 broken HTML fragment anchors, duplicate IDs, and unresolved
 `aria-labelledby` IDs. It also protects the homepage's required files and basic
 document metadata. Historical `*.bak*` and `*_backup.html` snapshots are
-intentionally excluded from production HTML validation.
+intentionally excluded from validation. They are still publicly served by the
+repository's legacy GitHub Pages build (for example, `index_backup.html`); this
+is a validation-scope decision, not a deployment exclusion.
+
+The workflow, validator, tests, and this note live under `.github/`, which the
+legacy Jekyll build excludes from the published site.
 
 ## Enabling the required check later
 
