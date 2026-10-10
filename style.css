@@ -389,6 +389,9 @@ a {
   font-size: 0.72rem;
   line-height: 1.35;
 }
+.mini-link {
+  display: none;
+}
 .journal-card {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -631,7 +634,24 @@ a {
     min-height: 320px;
   }
   .mini-card {
-    min-height: 116px;
+    min-height: 158px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .mini-link {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 14px;
+    border: 1px solid #ffffff40;
+    border-radius: 999px;
+    background: #ffffff12;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 850;
+    text-decoration: none;
   }
   .journal-copy {
     padding: 30px 24px 34px;
