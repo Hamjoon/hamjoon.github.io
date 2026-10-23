@@ -363,7 +363,8 @@ a {
 }
 .mini-card {
   min-height: 152px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: 15px;
   padding: 17px;
@@ -388,6 +389,22 @@ a {
   color: #bec9e7;
   font-size: 0.72rem;
   line-height: 1.35;
+}
+.mini-link,
+.mini-detail {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #ffffff40;
+  border-radius: 999px;
+  background: #ffffff12;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 850;
+  text-decoration: none;
 }
 .mini-link {
   display: none;
@@ -500,6 +517,8 @@ a {
 }
 .button:focus-visible,
 .card-link:focus-visible,
+.mini-link:focus-visible,
+.mini-detail:focus-visible,
 .nav-list a:focus-visible,
 .wordmark:focus-visible,
 .footer-meta a:focus-visible,
@@ -635,23 +654,12 @@ a {
   }
   .mini-card {
     min-height: 158px;
-    display: grid;
-    grid-template-columns: auto 1fr;
   }
   .mini-link {
-    grid-column: 1 / -1;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 10px 14px;
-    border: 1px solid #ffffff40;
-    border-radius: 999px;
-    background: #ffffff12;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 850;
-    text-decoration: none;
+  }
+  .mini-detail {
+    display: none;
   }
   .journal-copy {
     padding: 30px 24px 34px;
