@@ -24,22 +24,26 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#main-content"><span data-i18n="skip">Skip to content</span></a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="wordmark" href="#top" aria-label="Garibong Labs, home"
-          >Garibong Labs</a
+        <a class="wordmark" href="#top" aria-label="Garibong Labs, home" data-i18n-aria-label="a11y.0"
+          ><span data-i18n="studio">Garibong Labs</span></a
         >
-        <nav aria-label="Primary navigation">
+        <div class="language-switch" role="group" aria-label="Language" hidden>
+          <button type="button" data-language="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-language="ko" aria-pressed="false" lang="ko">한국어</button>
+        </div>
+        <nav aria-label="Primary navigation" data-i18n-aria-label="a11y.1">
           <ul class="nav-list">
-            <li><a href="#ios-apps">iOS Apps</a></li>
-            <li><a href="#toss-apps">Toss Mini Apps</a></li>
-            <li><a href="#journal">Journal</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#ios-apps"><span data-i18n="nav.ios">iOS Apps</span></a></li>
+            <li><a href="#toss-apps"><span data-i18n="nav.toss">Toss Mini Apps</span></a></li>
+            <li><a href="#journal"><span data-i18n="nav.journal">Journal</span></a></li>
+            <li><a href="#about"><span data-i18n="nav.about">About</span></a></li>
           </ul>
         </nav>
         <a class="nav-cta" href="#ios-apps"
-          >Explore work <span aria-hidden="true">↓</span></a
+          ><span data-i18n="nav.explore">Explore work</span> <span aria-hidden="true">↓</span></a
         >
       </div>
     </header>
@@ -47,31 +51,31 @@
     <main id="main-content">
       <section class="hero shell" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Independent software studio · Seoul</p>
-          <h1 id="hero-title">Small software.<br />Built to matter.</h1>
+          <p class="eyebrow"><span data-i18n="hero.eyebrow">Independent software studio · Seoul</span></p>
+          <h1 id="hero-title"><span data-i18n="hero.line1">Small software.</span><br /><span data-i18n="hero.line2">Built to matter.</span></h1>
           <p class="hero-lede">
-            We design focused apps and playful experiences that turn everyday
-            moments into something useful, calm, and memorable.
+            <span data-i18n="hero.description">We design focused apps and playful experiences that turn everyday
+            moments into something useful, calm, and memorable.</span>
           </p>
           <div class="button-row">
             <a class="button button--dark" href="#ios-apps"
-              >Explore our work <span aria-hidden="true">↓</span></a
+              ><span data-i18n="hero.explore">Explore our work</span> <span aria-hidden="true">↓</span></a
             >
             <a class="button button--outline" href="#journal"
-              >Read the journal <span aria-hidden="true">↗</span></a
+              ><span data-i18n="hero.journal">Read the journal</span> <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
         <div
           class="hero-art"
-          aria-label="Book Lawn and Bloom Velocity app previews"
+          aria-label="Book Lawn and Bloom Velocity app previews" data-i18n-aria-label="a11y.2"
         >
           <div class="glow glow--one" aria-hidden="true"></div>
           <div class="glow glow--two" aria-hidden="true"></div>
           <figure class="device device--portrait">
             <img
               src="/assets/ios/book-lawn-screen.jpg"
-              alt="Book Lawn reading tracker screen"
+              alt="Book Lawn reading tracker screen" data-i18n-alt="a11y.3"
               width="444"
               height="960"
             />
@@ -79,7 +83,7 @@
           <figure class="device device--landscape">
             <img
               src="/assets/ios/bloom-screen.jpg"
-              alt="Bloom Velocity anti-gravity racing game screen"
+              alt="Bloom Velocity anti-gravity racing game screen" data-i18n-alt="a11y.4"
               width="960"
               height="444"
             />
@@ -90,12 +94,12 @@
       <section class="section shell" id="ios-apps" aria-labelledby="ios-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">01 · iOS Apps</p>
-            <h2 id="ios-title">Made for the App Store.</h2>
+            <p class="eyebrow"><span data-i18n="ios.eyebrow">01 · iOS Apps</span></p>
+            <h2 id="ios-title"><span data-i18n="ios.title">Made for the App Store.</span></h2>
           </div>
           <p>
-            Thoughtful utilities and original games, designed and built
-            independently from first sketch to release.
+            <span data-i18n="ios.description">Thoughtful utilities and original games, designed and built
+            independently from first sketch to release.</span>
           </p>
         </div>
         <div class="ios-grid">
@@ -110,11 +114,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <p class="card-kicker">Featured · Reading</p>
-              <h3>Book Lawn</h3>
+              <p class="card-kicker"><span data-i18n="ios.featured">Featured · Reading</span></p>
+              <h3><span data-i18n="app.book">Book Lawn</span></h3>
               <p>
-                A quiet reading tracker that turns every reading session into a
-                lawn you can grow over time.
+                <span data-i18n="app.book.description">A quiet reading tracker that turns every reading session into a
+                lawn you can grow over time.</span>
               </p>
             </div>
             <a
@@ -122,8 +126,8 @@
               href="https://apps.apple.com/app/book-lawn-reading-tracker/id6757746167"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View on the App Store — Book Lawn"
-              >View on the App Store <span aria-hidden="true">↗</span></a
+              aria-label="View on the App Store — Book Lawn" data-i18n-aria-label="a11y.5"
+              ><span data-i18n="ios.store.featured">View on the App Store</span> <span aria-hidden="true">↗</span></a
             >
           </article>
 
@@ -138,11 +142,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <p class="card-kicker">Sports</p>
-              <h3>2026 Asian Games</h3>
+              <p class="card-kicker"><span data-i18n="category.sports">Sports</span></p>
+              <h3><span data-i18n="app.asian">2026 Asian Games</span></h3>
               <p>
-                Team Korea schedules, medal events, and calendar reminders
-                without the noise.
+                <span data-i18n="app.asian.description">Team Korea schedules, medal events, and calendar reminders
+                without the noise.</span>
               </p>
             </div>
             <a
@@ -150,8 +154,8 @@
               href="https://apps.apple.com/app/2026-%EC%95%84%EC%8B%9C%EC%95%88%EA%B2%8C%EC%9E%84-%ED%95%9C%EA%B5%AD%ED%8C%80-%EC%9D%BC%EC%A0%95/id6811900002"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View 2026 Asian Games on the App Store"
-              >App Store <span aria-hidden="true">↗</span></a
+              aria-label="View 2026 Asian Games on the App Store" data-i18n-aria-label="a11y.6"
+              ><span data-i18n="ios.store">App Store</span> <span aria-hidden="true">↗</span></a
             >
           </article>
 
@@ -166,11 +170,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <p class="card-kicker">Music</p>
-              <h3>Garibong Radio</h3>
+              <p class="card-kicker"><span data-i18n="category.music">Music</span></p>
+              <h3><span data-i18n="app.radio">Garibong Radio</span></h3>
               <p>
-                Set a 24-hour radio schedule for focus, rest, jazz, classics,
-                and sleep.
+                <span data-i18n="app.radio.description">Set a 24-hour radio schedule for focus, rest, jazz, classics,
+                and sleep.</span>
               </p>
             </div>
             <a
@@ -178,8 +182,8 @@
               href="https://apps.apple.com/kr/app/id6757255846"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Garibong Radio on the App Store"
-              >App Store <span aria-hidden="true">↗</span></a
+              aria-label="View Garibong Radio on the App Store" data-i18n-aria-label="a11y.7"
+              ><span data-i18n="ios.store">App Store</span> <span aria-hidden="true">↗</span></a
             >
           </article>
 
@@ -194,11 +198,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <p class="card-kicker">Game · Racing</p>
-              <h3>Bloom Velocity</h3>
+              <p class="card-kicker"><span data-i18n="category.racing">Game · Racing</span></p>
+              <h3><span data-i18n="app.bloom">Bloom Velocity</span></h3>
               <p>
-                Fast anti-gravity combat racing above the bioluminescent oceans
-                of an alien world.
+                <span data-i18n="app.bloom.description">Fast anti-gravity combat racing above the bioluminescent oceans
+                of an alien world.</span>
               </p>
             </div>
             <a
@@ -206,8 +210,8 @@
               href="https://apps.apple.com/app/bloom-velocity/id6809160127"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Bloom Velocity on the App Store"
-              >App Store <span aria-hidden="true">↗</span></a
+              aria-label="View Bloom Velocity on the App Store" data-i18n-aria-label="a11y.8"
+              ><span data-i18n="ios.store">App Store</span> <span aria-hidden="true">↗</span></a
             >
           </article>
 
@@ -222,11 +226,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <p class="card-kicker">Game · Sports</p>
-              <h3>Lunch Table Tennis King</h3>
+              <p class="card-kicker"><span data-i18n="category.sportsgame">Game · Sports</span></p>
+              <h3><span data-i18n="app.tennis">Lunch Table Tennis King</span></h3>
               <p>
-                One-handed 3D table tennis in an office lunch league. Beat four
-                coworkers and become the lunch-break champion.
+                <span data-i18n="app.tennis.description">One-handed 3D table tennis in an office lunch league. Beat four
+                coworkers and become the lunch-break champion.</span>
               </p>
             </div>
             <a
@@ -234,8 +238,8 @@
               href="https://apps.apple.com/app/id6819986217"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Lunch Table Tennis King on the App Store"
-              >App Store <span aria-hidden="true">↗</span></a
+              aria-label="View Lunch Table Tennis King on the App Store" data-i18n-aria-label="a11y.9"
+              ><span data-i18n="ios.store">App Store</span> <span aria-hidden="true">↗</span></a
             >
           </article>
 
@@ -250,11 +254,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <p class="card-kicker">Game · Puzzle</p>
-              <h3>Tile Trio</h3>
+              <p class="card-kicker"><span data-i18n="category.puzzle">Game · Puzzle</span></p>
+              <h3><span data-i18n="app.tile">Tile Trio</span></h3>
               <p>
-                A relaxing triple-match puzzle across tropical islands. Play
-                60 levels and a daily challenge in English or Korean.
+                <span data-i18n="app.tile.description">A relaxing triple-match puzzle across tropical islands. Play
+                60 levels and a daily challenge in English or Korean.</span>
               </p>
             </div>
             <a
@@ -262,8 +266,8 @@
               href="https://apps.apple.com/app/id6819204712"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Tile Trio on the App Store"
-              >App Store <span aria-hidden="true">↗</span></a
+              aria-label="View Tile Trio on the App Store" data-i18n-aria-label="a11y.10"
+              ><span data-i18n="ios.store">App Store</span> <span aria-hidden="true">↗</span></a
             >
           </article>
         </div>
@@ -277,16 +281,16 @@
         <div class="shell">
           <div class="section-heading section-heading--light">
             <div>
-              <p class="eyebrow eyebrow--light">02 · Toss Mini Apps</p>
-              <h2 id="toss-title">Instant ideas, ready to play.</h2>
+              <p class="eyebrow eyebrow--light"><span data-i18n="toss.eyebrow">02 · Toss Mini Apps</span></p>
+              <h2 id="toss-title"><span data-i18n="toss.title">Instant ideas, ready to play.</span></h2>
             </div>
             <p>
-              Explore thirteen mini apps made for everyday curiosity, quick
+              <span data-i18n="toss.description">Explore thirteen mini apps made for everyday curiosity, quick
               decisions, and a little fun. View details on desktop or open
-              directly in Toss on mobile.
+              directly in Toss on mobile.</span>
             </p>
           </div>
-          <ul class="mini-grid" aria-label="Live Toss mini apps">
+          <ul class="mini-grid" aria-label="Live Toss mini apps" data-i18n-aria-label="a11y.11">
             <li class="mini-card">
               <img
                 src="/assets/toss/lunch-table-tennis-king.png"
@@ -297,22 +301,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Lunch Table Tennis King</h3>
-                <p>Play a quick office table tennis match.</p>
+                <h3><span data-i18n="app.tennis">Lunch Table Tennis King</span></h3>
+                <p><span data-i18n="toss.tennis.description">Play a quick office table tennis match.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://table-tennis-game"
-                aria-label="Open in Toss — Lunch Table Tennis King"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Lunch Table Tennis King" data-i18n-aria-label="a11y.12"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/table-tennis-game?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Lunch Table Tennis King (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Lunch Table Tennis King (opens in a new tab)" data-i18n-aria-label="a11y.13"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -325,22 +329,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Reading Lawn</h3>
-                <p>Grow a lawn through reading.</p>
+                <h3><span data-i18n="toss.reading">Reading Lawn</span></h3>
+                <p><span data-i18n="toss.reading.description">Grow a lawn through reading.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://reading-lawn"
-                aria-label="Open in Toss — Reading Lawn"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Reading Lawn" data-i18n-aria-label="a11y.14"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/reading-lawn?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Reading Lawn (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Reading Lawn (opens in a new tab)" data-i18n-aria-label="a11y.15"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -353,22 +357,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Movie of the Week</h3>
-                <p>See what is new in theaters.</p>
+                <h3><span data-i18n="toss.movie">Movie of the Week</span></h3>
+                <p><span data-i18n="toss.movie.description">See what is new in theaters.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://movie-oftheweek"
-                aria-label="Open in Toss — Movie of the Week"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Movie of the Week" data-i18n-aria-label="a11y.16"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/movie-oftheweek?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Movie of the Week (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Movie of the Week (opens in a new tab)" data-i18n-aria-label="a11y.17"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -381,22 +385,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Next Day Off</h3>
-                <p>Count down to the next break.</p>
+                <h3><span data-i18n="toss.offday">Next Day Off</span></h3>
+                <p><span data-i18n="toss.offday.description">Count down to the next break.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://offday-calendar"
-                aria-label="Open in Toss — Next Day Off"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Next Day Off" data-i18n-aria-label="a11y.18"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/offday-calendar?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Next Day Off (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Next Day Off (opens in a new tab)" data-i18n-aria-label="a11y.19"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -409,22 +413,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Vacation Safety</h3>
-                <p>Spot accident-prone roads.</p>
+                <h3><span data-i18n="toss.vacation">Vacation Safety</span></h3>
+                <p><span data-i18n="toss.vacation.description">Spot accident-prone roads.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://vacation-safety-map"
-                aria-label="Open in Toss — Vacation Safety"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Vacation Safety" data-i18n-aria-label="a11y.20"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/vacation-safety-map?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Vacation Safety (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Vacation Safety (opens in a new tab)" data-i18n-aria-label="a11y.21"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -437,22 +441,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Bloom Velocity</h3>
-                <p>Race above an alien ocean.</p>
+                <h3><span data-i18n="app.bloom">Bloom Velocity</span></h3>
+                <p><span data-i18n="toss.bloom.description">Race above an alien ocean.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://ghost-leg-3d"
-                aria-label="Open in Toss — Bloom Velocity"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Bloom Velocity" data-i18n-aria-label="a11y.22"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/ghost-leg-3d?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Bloom Velocity (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Bloom Velocity (opens in a new tab)" data-i18n-aria-label="a11y.23"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -465,22 +469,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Scary Ghost Leg</h3>
-                <p>Pick a winner in 3D.</p>
+                <h3><span data-i18n="toss.ghost">Scary Ghost Leg</span></h3>
+                <p><span data-i18n="toss.ghost.description">Pick a winner in 3D.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://scary-ghost-leg"
-                aria-label="Open in Toss — Scary Ghost Leg"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Scary Ghost Leg" data-i18n-aria-label="a11y.24"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/scary-ghost-leg?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Scary Ghost Leg (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Scary Ghost Leg (opens in a new tab)" data-i18n-aria-label="a11y.25"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -493,22 +497,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Roulette Wheel</h3>
-                <p>Let the wheel make the call.</p>
+                <h3><span data-i18n="toss.roulette">Roulette Wheel</span></h3>
+                <p><span data-i18n="toss.roulette.description">Let the wheel make the call.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://roulette-wheel"
-                aria-label="Open in Toss — Roulette Wheel"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Roulette Wheel" data-i18n-aria-label="a11y.26"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/roulette-wheel?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Roulette Wheel (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Roulette Wheel (opens in a new tab)" data-i18n-aria-label="a11y.27"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -521,22 +525,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Seoul Time Travel</h3>
-                <p>Watch Gwanghwamun change.</p>
+                <h3><span data-i18n="toss.seoul">Seoul Time Travel</span></h3>
+                <p><span data-i18n="toss.seoul.description">Watch Gwanghwamun change.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://seoul-time-travel"
-                aria-label="Open in Toss — Seoul Time Travel"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Seoul Time Travel" data-i18n-aria-label="a11y.28"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/seoul-time-travel?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Seoul Time Travel (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Seoul Time Travel (opens in a new tab)" data-i18n-aria-label="a11y.29"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -549,22 +553,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Hangang Stroll</h3>
-                <p>Take a playful 3D walk.</p>
+                <h3><span data-i18n="toss.hangang">Hangang Stroll</span></h3>
+                <p><span data-i18n="toss.hangang.description">Take a playful 3D walk.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://find-hidden-objects"
-                aria-label="Open in Toss — Hangang Stroll"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Hangang Stroll" data-i18n-aria-label="a11y.30"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/find-hidden-objects?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Hangang Stroll (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Hangang Stroll (opens in a new tab)" data-i18n-aria-label="a11y.31"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -577,22 +581,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Hope Poll</h3>
-                <p>Vote on the film's meaning.</p>
+                <h3><span data-i18n="toss.hope">Hope Poll</span></h3>
+                <p><span data-i18n="toss.hope.description">Vote on the film's meaning.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://movie-hope"
-                aria-label="Open in Toss — Hope Poll"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Hope Poll" data-i18n-aria-label="a11y.32"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/movie-hope?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Hope Poll (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Hope Poll (opens in a new tab)" data-i18n-aria-label="a11y.33"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -605,22 +609,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Noodles Gauge</h3>
-                <p>Charge up with cold noodles.</p>
+                <h3><span data-i18n="toss.noodles">Noodles Gauge</span></h3>
+                <p><span data-i18n="toss.noodles.description">Charge up with cold noodles.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://cold-noodles-gauge"
-                aria-label="Open in Toss — Noodles Gauge"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Noodles Gauge" data-i18n-aria-label="a11y.34"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/cold-noodles-gauge?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Noodles Gauge (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Noodles Gauge (opens in a new tab)" data-i18n-aria-label="a11y.35"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
             <li class="mini-card">
@@ -633,22 +637,22 @@
                 decoding="async"
               />
               <div>
-                <h3>Team Korea 2026</h3>
-                <p>Follow every Korean match.</p>
+                <h3><span data-i18n="toss.korea">Team Korea 2026</span></h3>
+                <p><span data-i18n="toss.korea.description">Follow every Korean match.</span></p>
               </div>
               <a
                 class="mini-link"
                 href="intoss://asian-games-2026"
-                aria-label="Open in Toss — Team Korea 2026"
-                >Open in Toss <span aria-hidden="true">↗</span></a
+                aria-label="Open in Toss — Team Korea 2026" data-i18n-aria-label="a11y.36"
+                ><span data-i18n="toss.open">Open in Toss</span> <span aria-hidden="true">↗</span></a
               >
               <a
                 class="mini-detail"
                 href="https://tossminiapp.com/d/asian-games-2026?referrer=miniapp_detail_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View details — Team Korea 2026 (opens in a new tab)"
-                >View details <span aria-hidden="true">↗</span></a
+                aria-label="View details — Team Korea 2026 (opens in a new tab)" data-i18n-aria-label="a11y.37"
+                ><span data-i18n="toss.details">View details</span> <span aria-hidden="true">↗</span></a
               >
             </li>
           </ul>
@@ -662,12 +666,12 @@
       >
         <div class="section-heading">
           <div>
-            <p class="eyebrow">03 · Journal</p>
-            <h2 id="journal-title">Notes from the build.</h2>
+            <p class="eyebrow"><span data-i18n="journal.eyebrow">03 · Journal</span></p>
+            <h2 id="journal-title"><span data-i18n="journal.title">Notes from the build.</span></h2>
           </div>
           <p>
-            Architecture, experiments, and practical lessons from making
-            independent software.
+            <span data-i18n="journal.description">Architecture, experiments, and practical lessons from making
+            independent software.</span>
           </p>
         </div>
         <article class="journal-card">
@@ -679,22 +683,22 @@
           </div>
           <div class="journal-copy">
             <p class="card-kicker card-kicker--light">
-              Featured article · Architecture
+              <span data-i18n="journal.featured">Featured article · Architecture</span>
             </p>
             <h3>
-              Calling My AI Agent: Building a Voice Bridge with OpenClaw and
-              Agora
+              <span data-i18n="journal.article">Calling My AI Agent: Building a Voice Bridge with OpenClaw and
+              Agora</span>
             </h3>
             <p>
-              A field note on the architecture and decisions behind connecting
-              an AI agent to a real-time voice experience.
+              <span data-i18n="journal.summary">A field note on the architecture and decisions behind connecting
+              an AI agent to a real-time voice experience.</span>
             </p>
             <a
               class="button button--light"
               href="https://bongman.tistory.com/1906"
               target="_blank"
               rel="noopener noreferrer"
-              >Read the article <span aria-hidden="true">↗</span></a
+              ><span data-i18n="journal.read">Read the article</span> <span aria-hidden="true">↗</span></a
             >
           </div>
         </article>
@@ -706,25 +710,25 @@
         aria-labelledby="about-title"
       >
         <div>
-          <p class="eyebrow">04 · About</p>
-          <h2 id="about-title">Independent by design.</h2>
+          <p class="eyebrow"><span data-i18n="about.eyebrow">04 · About</span></p>
+          <h2 id="about-title"><span data-i18n="about.title">Independent by design.</span></h2>
         </div>
         <div class="about-copy">
           <p>
-            Garibong Labs is a Seoul-based independent software studio. We make
+            <span data-i18n="about.description">Garibong Labs is a Seoul-based independent software studio. We make
             small, focused products with equal care for usefulness, character,
-            and long-term quality.
+            and long-term quality.</span>
           </p>
           <div class="button-row">
             <a class="button button--dark" href="mailto:contact@garibong.dev"
-              >Contact us <span aria-hidden="true">↗</span></a
+              ><span data-i18n="about.contact">Contact us</span> <span aria-hidden="true">↗</span></a
             >
             <a
               class="button button--outline"
               href="https://github.com/Hamjoon"
               target="_blank"
               rel="noopener noreferrer"
-              >GitHub <span aria-hidden="true">↗</span></a
+              ><span data-i18n="about.github">GitHub</span> <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
@@ -734,23 +738,24 @@
     <footer class="site-footer">
       <div class="shell footer-inner">
         <div>
-          <p class="wordmark wordmark--footer">Garibong Labs</p>
-          <p>Independent software studio · Seoul, Korea</p>
+          <p class="wordmark wordmark--footer"><span data-i18n="studio">Garibong Labs</span></p>
+          <p><span data-i18n="footer.location">Independent software studio · Seoul, Korea</span></p>
         </div>
         <div class="footer-meta">
           <p>
-            <a href="mailto:contact@garibong.dev">contact@garibong.dev</a> ·
+            <a href="mailto:contact@garibong.dev"><span data-i18n="footer.email">contact@garibong.dev</span></a> ·
             <a
               href="https://glaze-adasaurus-f8d.notion.site/Privacy-Policy-2d688ca270ad80ed8183c5e4d308847b"
               target="_blank"
               rel="noopener noreferrer"
-              >Privacy Policy</a
+              ><span data-i18n="footer.privacy">Privacy Policy</span></a
             >
           </p>
-          <p>Business Registration Number: 604-05-36402</p>
-          <p>© 2026 Garibong Labs. All rights reserved.</p>
+          <p><span data-i18n="footer.business">Business Registration Number: 604-05-36402</span></p>
+          <p><span data-i18n="footer.copyright">© 2026 Garibong Labs. All rights reserved.</span></p>
         </div>
       </div>
     </footer>
+    <script src="/assets/i18n.js" defer></script>
   </body>
 </html>
