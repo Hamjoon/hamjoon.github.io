@@ -99,6 +99,51 @@ a {
 .nav-cta {
   display: none;
 }
+.header-inner nav {
+  order: 1;
+  margin-left: auto;
+}
+.language-switch {
+  order: 2;
+  display: flex;
+  flex-shrink: 0;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.language-switch[hidden] {
+  display: none;
+}
+.language-switch button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+.language-switch button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--surface);
+}
+html[lang="ko"] body {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+html[lang="ko"] .hero h1 {
+  font-size: clamp(2.8rem, 4.8vw, 4.5rem);
+  line-height: 1.16;
+  letter-spacing: -0.05em;
+}
+html[lang="ko"] .eyebrow {
+  letter-spacing: 0.04em;
+}
 .hero {
   min-height: 690px;
   display: grid;
@@ -516,6 +561,7 @@ a {
   color: #d8dde3;
 }
 .button:focus-visible,
+.language-switch button:focus-visible,
 .card-link:focus-visible,
 .mini-link:focus-visible,
 .mini-detail:focus-visible,
@@ -586,6 +632,9 @@ a {
   }
 }
 @media (max-width: 620px) {
+  html[lang="ko"] .hero h1 {
+    font-size: clamp(2rem, 9.6vw, 3.5rem);
+  }
   html {
     scroll-padding-top: 116px;
   }
