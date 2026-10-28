@@ -20,6 +20,38 @@ class TranslationMarkers(HTMLParser):
                 self.keys.add(value)
 
 
+class ProductLinks(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.cards = []
+        self.card = None
+        self.card_tag = None
+        self.in_heading = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        classes = attrs.get("class", "").split()
+        if "product-card" in classes or "mini-card" in classes:
+            self.card = {"heading": None, "links": []}
+            self.card_tag = tag
+            self.cards.append(self.card)
+        if self.card is None:
+            return
+        if tag == "h3":
+            self.in_heading = True
+        if self.in_heading and "data-i18n" in attrs:
+            self.card["heading"] = attrs["data-i18n"]
+        if tag == "a":
+            self.card["links"].append((attrs.get("class"), attrs.get("data-i18n-aria-label")))
+
+    def handle_endtag(self, tag):
+        if tag == "h3":
+            self.in_heading = False
+        if tag == self.card_tag:
+            self.card = None
+            self.card_tag = None
+
+
 class LocalizationTests(unittest.TestCase):
     def setUp(self):
         script = (ROOT / "assets/i18n.js").read_text()
@@ -41,6 +73,20 @@ class LocalizationTests(unittest.TestCase):
             with self.subTest(key=key):
                 self.assertEqual(set(entry), {"en", "ko"})
                 self.assertTrue(all(isinstance(value, str) and value.strip() for value in entry.values()))
+
+    def test_product_link_names_include_the_target_app_in_both_languages(self):
+        parser = ProductLinks()
+        parser.feed((ROOT / "index.html").read_text())
+        self.assertEqual(len(parser.cards), 19)
+        self.assertEqual(sum(len(card["links"]) for card in parser.cards), 32)
+        for card in parser.cards:
+            self.assertIsNotNone(card["heading"])
+            for link_class, label_key in card["links"]:
+                self.assertIsNotNone(label_key)
+                for language in ("en", "ko"):
+                    with self.subTest(app=card["heading"], link=link_class, language=language):
+                        app_name = self.messages[card["heading"]][language]
+                        self.assertIn(app_name, self.messages[label_key][language])
 
 
 if __name__ == "__main__":

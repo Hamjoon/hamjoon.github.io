@@ -388,35 +388,35 @@
   },
   "a11y.14": {
     "en": "Open in Toss — Reading Lawn",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 독서 잔디밭 열기"
   },
   "a11y.15": {
     "en": "View details — Reading Lawn (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "독서 잔디밭 상세보기 (새 탭에서 열림)"
   },
   "a11y.16": {
     "en": "Open in Toss — Movie of the Week",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 이번주 개봉영화 열기"
   },
   "a11y.17": {
     "en": "View details — Movie of the Week (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "이번주 개봉영화 상세보기 (새 탭에서 열림)"
   },
   "a11y.18": {
     "en": "Open in Toss — Next Day Off",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 다음 쉬는날 열기"
   },
   "a11y.19": {
     "en": "View details — Next Day Off (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "다음 쉬는날 상세보기 (새 탭에서 열림)"
   },
   "a11y.20": {
     "en": "Open in Toss — Vacation Safety",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 휴가길 조심지도 열기"
   },
   "a11y.21": {
     "en": "View details — Vacation Safety (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "휴가길 조심지도 상세보기 (새 탭에서 열림)"
   },
   "a11y.22": {
     "en": "Open in Toss — Bloom Velocity",
@@ -428,59 +428,59 @@
   },
   "a11y.24": {
     "en": "Open in Toss — Scary Ghost Leg",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 공포의 사다리 열기"
   },
   "a11y.25": {
     "en": "View details — Scary Ghost Leg (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "공포의 사다리 상세보기 (새 탭에서 열림)"
   },
   "a11y.26": {
     "en": "Open in Toss — Roulette Wheel",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 룰렛 돌리기 열기"
   },
   "a11y.27": {
     "en": "View details — Roulette Wheel (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "룰렛 돌리기 상세보기 (새 탭에서 열림)"
   },
   "a11y.28": {
     "en": "Open in Toss — Seoul Time Travel",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 서울 시간여행 열기"
   },
   "a11y.29": {
     "en": "View details — Seoul Time Travel (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "서울 시간여행 상세보기 (새 탭에서 열림)"
   },
   "a11y.30": {
     "en": "Open in Toss — Hangang Stroll",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 한강변 여름 산책 열기"
   },
   "a11y.31": {
     "en": "View details — Hangang Stroll (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "한강변 여름 산책 상세보기 (새 탭에서 열림)"
   },
   "a11y.32": {
     "en": "Open in Toss — Hope Poll",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 Hope 해석 투표 열기"
   },
   "a11y.33": {
     "en": "View details — Hope Poll (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "Hope 해석 투표 상세보기 (새 탭에서 열림)"
   },
   "a11y.34": {
     "en": "Open in Toss — Noodles Gauge",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 평냉 배터리 열기"
   },
   "a11y.35": {
     "en": "View details — Noodles Gauge (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "평냉 배터리 상세보기 (새 탭에서 열림)"
   },
   "a11y.36": {
     "en": "Open in Toss — Team Korea 2026",
-    "ko": "토스에서 토스에서 열기 열기"
+    "ko": "토스에서 아시안게임 일정 열기"
   },
   "a11y.37": {
     "en": "View details — Team Korea 2026 (opens in a new tab)",
-    "ko": "상세보기 상세보기 (새 탭에서 열림)"
+    "ko": "아시안게임 일정 상세보기 (새 탭에서 열림)"
   },
   "page.title": {
     "en": "Garibong Labs · Independent Software Studio",
